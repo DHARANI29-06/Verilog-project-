@@ -94,11 +94,31 @@ endmodule
 <img width="1624" height="884" alt="image" src="https://github.com/user-attachments/assets/2652d714-2bec-4d19-b79e-6ba715ef0e0c" />
 
 ## FPGA board simulation
+
+1.  x = 00000000 & y = 00000000
+2.  x = 01100100 & y = 00000000 
+3.  output is NORTH (1000)
+
 ![WhatsApp Image 2025-11-19 at 12 24 26_728de212](https://github.com/user-attachments/assets/7612a3ec-d4b9-47d5-9309-efecd4e772f1)
+
+
+1.  x = 00000000
+2.  Y = 01100100 
+3.  output is EAST (0100)
 
 ![WhatsApp Image 2025-11-19 at 12 24 26_904c3042](https://github.com/user-attachments/assets/e385a484-fa0b-4754-b544-c95e2df667ea)
 
+
+1.  x = 10011100
+2.  Y = 00000000
+3.  output is SOUTH (0010)
+
 ![WhatsApp Image 2025-11-19 at 12 24 26_a0e93b83](https://github.com/user-attachments/assets/712b4a4f-2d5c-463e-a272-9b1e2745270b)
+
+
+1.  x = 00000000
+2.  Y = 10011100 
+3.  output is WEST (0001)
 
 ![WhatsApp Image 2025-11-19 at 12 24 25_a3d74663](https://github.com/user-attachments/assets/67c11f09-2162-4a64-ab95-a3854c633155)
 
