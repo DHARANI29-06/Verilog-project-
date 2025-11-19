@@ -1,12 +1,21 @@
-## Verilog-project-
-## Digital compass decoder
+# Digital compass decoder
 ## Aim
 
 To design and simulate a digital compass decoder that converts sensor direction signals into readable compass outputs using vivado software.
-## Apparatus required 
-Vivado software 
-## Block diagram 
 
+## Apparatus required 
+Vivado 2024.1
+
+## Block diagram 
+<img width="2848" height="1600" alt="image" src="https://github.com/user-attachments/assets/601ecf43-2324-495c-9267-85c0dbfc972b" />
+
+## Objective
+
+  1. Read X and Y sensor values.
+  2. Calculate the heading angle (0–359°).
+  3. Decode the angle into N, E, S, or W.
+  4. Implement the logic using Verilog.
+  5. Verify direction output through simulation.
 
 ## Verilog code 
 ```verilog
@@ -46,7 +55,10 @@ direction = 4'b0001;
 else
 direction = 4'b0000;
 end
-Endmodule
+endmodule
+```
+## Testbench code ##
+```verilog
 module compassdecoder_tb;
 reg signed [15:0] x_tb;
 reg signed [15:0] y_tb;
@@ -79,19 +91,9 @@ endmodule
 ```
 ## Simulation output 
 
+<img width="1632" height="869" alt="Screenshot 2025-11-18 181402" src="https://github.com/user-attachments/assets/7568b270-c8b9-42db-90f2-24745ecb5ca0" />
+
+
 
 ## Result 
 The digital compass decoder was successfully designed and simulated in Vivado, and it correctly converted the input sensor signals into the corresponding compass directions.
-
-
-
-
-
-
-
-
-
-
-
-
-
