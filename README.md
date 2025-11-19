@@ -20,8 +20,8 @@ Vivado 2024.1
 ## Verilog code 
 ```verilog
 module compassdecoder(
-input signed [15:0] x,
-input signed [15:0] y,
+input signed [7:0] x,
+input signed [7:0] y,
 output reg [3:0] direction
 );
 reg [8:0] heading;
@@ -60,8 +60,8 @@ endmodule
 ## Testbench code ##
 ```verilog
 module compassdecoder_tb;
-reg signed [15:0] x_tb;
-reg signed [15:0] y_tb;
+reg signed [7:0] x_tb;
+reg signed [7:0] y_tb;
 wire [3:0] direction_led_tb;
 compassdecoder uut (
 .x(x_tb),
@@ -91,8 +91,7 @@ endmodule
 ```
 ## Simulation output 
 
-<img width="1632" height="869" alt="Screenshot 2025-11-18 181402" src="https://github.com/user-attachments/assets/7568b270-c8b9-42db-90f2-24745ecb5ca0" />
-
+<img width="1624" height="884" alt="image" src="https://github.com/user-attachments/assets/2652d714-2bec-4d19-b79e-6ba715ef0e0c" />
 
 
 ## Result 
